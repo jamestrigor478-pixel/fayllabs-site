@@ -66,7 +66,8 @@ export default function AboutPage() {
             <h2>Honesty on this site</h2>
             <p>
               We do not list fake clients, fake reviews, invented office
-              addresses, or fabricated statistics. For services detail, see{" "}
+              addresses, or fabricated statistics. For product categories, see{" "}
+              <Link href="/products">Products</Link>. For a shorter overview, see{" "}
               <Link href="/services">Services</Link>. For purchases and issues,
               see <Link href="/support">Support &amp; Refund Policy</Link>. To
               reach us, use <Link href="/contact">Contact</Link>.

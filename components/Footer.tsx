@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
             <p>
               Digital products, online stores, and software tools for customers
-              worldwide.
+              worldwide. Support in English, French, and Arabic.
             </p>
             <p>
               <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
@@ -28,10 +28,13 @@ export default function Footer() {
               <h4>Company</h4>
               <ul>
                 <li>
-                  <Link href="/about">About</Link>
+                  <Link href="/products">Products</Link>
                 </li>
                 <li>
                   <Link href="/services">Services</Link>
+                </li>
+                <li>
+                  <Link href="/about">About</Link>
                 </li>
                 <li>
                   <Link href="/contact">Contact</Link>

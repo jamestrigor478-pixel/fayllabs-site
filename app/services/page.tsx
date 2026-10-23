@@ -5,27 +5,27 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Fayllabs services for worldwide customers: digital products, e-commerce online stores, and software tools.",
+    "Fayllabs merchant services: digital product sales, e-commerce storefronts, and software tools for customers worldwide.",
   openGraph: {
     title: "Services | Fayllabs",
     description:
-      "Digital products, online stores, and software tools from Fayllabs for customers worldwide.",
+      "How Fayllabs operates as a digital goods merchant — products, stores, and tools.",
     url: `${siteConfig.url}/services`,
   },
 };
 
 const services = [
   {
-    title: "Digital products",
-    body: "We create and sell digital products — software, tools, and downloadable or account-based offerings. Customers pay online and receive electronic delivery or access. This is our core merchant activity.",
+    title: "Digital product sales",
+    body: "We sell software licenses and keys, digital tools, and account-based offerings. Customers pay online and receive electronic delivery. See the Products catalog for category detail.",
   },
   {
     title: "E-commerce / online stores",
-    body: "We operate online stores and digital storefronts: product listings, pricing, checkout, and delivery of digital goods. Stores are used by customers worldwide who buy online.",
+    body: "We operate online storefronts — product listings, pricing, checkout, and digital delivery to buyers worldwide. One example is BoostCrown, a store Fayllabs runs for digital marketing tools and online growth services.",
   },
   {
     title: "Software tools",
-    body: "We build software tools that help people and businesses get work done online — utilities and applications connected to our digital product lineup and customer workflows.",
+    body: "We build and sell utilities and applications connected to our digital product lineup — tools people purchase and use for online work.",
   },
 ];
 
@@ -35,10 +35,14 @@ export default function ServicesPage() {
       <section className="page-hero">
         <div className="container">
           <span className="kicker">Services</span>
-          <h1>What Fayllabs sells and operates</h1>
+          <h1>How Fayllabs operates as a merchant</h1>
           <p className="lead">
-            Concrete description of our merchant work — without invented case
-            studies or fake client logos.
+            The business activities behind our checkouts. For shelf-level
+            categories and visuals, see{" "}
+            <Link href="/products" style={{ color: "var(--accent)", fontWeight: 600, textDecoration: "underline", textUnderlineOffset: 3 }}>
+              Products
+            </Link>
+            .
           </p>
         </div>
       </section>
@@ -62,8 +66,8 @@ export default function ServicesPage() {
           <p>
             Our customers are people and organizations worldwide who purchase
             digital products or use our online services. Delivery is electronic
-            (download, license, or account access). Support and refund handling
-            are described on our{" "}
+            (download, license, or account access). We communicate in English,
+            French, and Arabic. Support and refund handling are on our{" "}
             <Link href="/support">Support &amp; Refund Policy</Link> page.
           </p>
           <p>
