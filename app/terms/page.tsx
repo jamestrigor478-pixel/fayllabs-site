@@ -17,7 +17,7 @@ export default function TermsPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="eyebrow">Legal</span>
+          <span className="kicker">Legal</span>
           <h1>Terms of Service</h1>
           <p className="lead">
             Last updated: October 23, 2026. These terms govern your use of the

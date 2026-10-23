@@ -1,31 +1,64 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site";
+import LogoMark from "./LogoMark";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="site-footer">
-      <div className="container footer-inner">
-        <div>
-          <div className="logo" style={{ marginBottom: "0.75rem" }}>
-            <span className="logo-mark" aria-hidden="true">
-              F
-            </span>
-            Fayllabs
+      <div className="container">
+        <div className="footer-grid">
+          <div className="footer-brand">
+            <div className="logo">
+              <LogoMark />
+              Fayllabs
+            </div>
+            <p>
+              Digital products, online stores, and software tools for customers
+              worldwide.
+            </p>
+            <p>
+              <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
+            </p>
           </div>
-          <p className="footer-copy" style={{ margin: "0 0 0.75rem" }}>
-            Digital products &amp; online services ·{" "}
-            <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
-          </p>
-          <div className="footer-links">
-            <Link href="/privacy">Privacy</Link>
-            <Link href="/terms">Terms</Link>
-            <Link href="/support">Support &amp; Refunds</Link>
-            <Link href="/contact">Contact</Link>
+
+          <div className="footer-cols">
+            <div className="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li>
+                  <Link href="/about">About</Link>
+                </li>
+                <li>
+                  <Link href="/services">Services</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-col">
+              <h4>Legal</h4>
+              <ul>
+                <li>
+                  <Link href="/privacy">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link href="/terms">Terms of Service</Link>
+                </li>
+                <li>
+                  <Link href="/support">Support &amp; Refunds</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <p className="footer-copy">© {year} Fayllabs</p>
+
+        <div className="footer-bottom">
+          <span>© {year} Fayllabs</span>
+          <span>{siteConfig.domain}</span>
+        </div>
       </div>
     </footer>
   );

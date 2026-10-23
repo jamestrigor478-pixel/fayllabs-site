@@ -18,7 +18,7 @@ export default function PrivacyPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="eyebrow">Legal</span>
+          <span className="kicker">Legal</span>
           <h1>Privacy Policy</h1>
           <p className="lead">
             Last updated: October 23, 2026. This policy explains how Fayllabs

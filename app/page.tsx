@@ -18,168 +18,130 @@ export default function HomePage() {
   return (
     <>
       <section className="hero">
-        <div className="container hero-grid">
-          <div>
-            <span className="eyebrow">Fayllabs · faycallabs.com</span>
-            <h1>Digital products, software tools, and online stores.</h1>
+        <div className="container hero-layout">
+          <div className="hero-copy">
+            <span className="kicker">Digital commerce company</span>
+            <h1>We sell digital products and run online stores.</h1>
             <p className="lead">
-              Fayllabs is a digital products and online services company. We
-              create software and digital offerings, operate e-commerce
-              storefronts, and serve customers worldwide with electronic
-              delivery and email support.
+              Fayllabs is a merchant of digital goods: software, tools, and
+              online offerings sold worldwide with electronic delivery. We also
+              operate e-commerce storefronts and support buyers by email —
+              including multilingual communication for international customers
+              and partners.
             </p>
             <div className="hero-actions">
               <Link href="/contact" className="btn btn-primary">
-                Contact / Get in touch
+                Contact Fayllabs
               </Link>
               <Link href="/services" className="btn btn-secondary">
-                View services
+                See what we offer
               </Link>
             </div>
           </div>
 
-          <aside className="hero-card" aria-label="Company highlights">
-            <ul>
-              <li>
-                <span className="dot" aria-hidden="true" />
-                <span>
-                  Merchant of digital goods — software, tools, and online
-                  offerings sold and delivered electronically
-                </span>
-              </li>
-              <li>
-                <span className="dot" aria-hidden="true" />
-                <span>
-                  Online stores with product listings, checkout, and digital
-                  delivery for buyers worldwide
-                </span>
-              </li>
-              <li>
-                <span className="dot" aria-hidden="true" />
-                <span>
-                  Multilingual communication for international customers and
-                  partners
-                </span>
-              </li>
-              <li>
-                <span className="dot" aria-hidden="true" />
-                <span>
-                  Business contact: {siteConfig.email}
-                </span>
-              </li>
-            </ul>
+          <aside className="hero-aside" aria-label="At a glance">
+            <p>
+              Practical digital commerce — products people can buy and use,
+              storefronts that check out cleanly, and software tools that support
+              online work.
+            </p>
+            <p className="meta">
+              Business email{" "}
+              <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
+            </p>
+            <p className="meta">Domain · {siteConfig.domain}</p>
           </aside>
+        </div>
+      </section>
+
+      <section className="section section-rule">
+        <div className="container">
+          <div className="section-header">
+            <span className="kicker">What we do</span>
+            <h2>Three lines of work</h2>
+            <p>
+              No invented portfolios or vanity metrics — just the merchant
+              activities Fayllabs actually runs.
+            </p>
+          </div>
+
+          <div className="service-strip">
+            <article className="service-row">
+              <h3>Digital products</h3>
+              <p>
+                Software, tools, and digital offerings customers purchase online
+                and receive electronically — downloads, licenses, or account
+                access.
+              </p>
+            </article>
+            <article className="service-row">
+              <h3>Online stores</h3>
+              <p>
+                E-commerce storefronts for listing, pricing, checkout, and
+                digital delivery to buyers worldwide.
+              </p>
+            </article>
+            <article className="service-row">
+              <h3>Software tools</h3>
+              <p>
+                Applications and utilities that help people and businesses get
+                work done online, tied to our product lineup.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
           <div className="section-header">
-            <h2>What Fayllabs does</h2>
+            <span className="kicker">Policies</span>
+            <h2>Trust &amp; legal</h2>
             <p>
-              We focus on practical digital commerce: building products people
-              can buy and use, running online stores, and shipping software
-              tools that support online work.
+              Clear pages for customers and payment partners. Substance first —
+              no filler marketing cards.
             </p>
           </div>
-          <div className="grid-3">
-            <article className="card">
-              <div className="card-icon" aria-hidden="true">
-                01
-              </div>
-              <h3>Digital products</h3>
-              <p>
-                Software, tools, and digital offerings customers purchase online
-                and receive electronically.
-              </p>
-            </article>
-            <article className="card">
-              <div className="card-icon" aria-hidden="true">
-                02
-              </div>
-              <h3>E-commerce &amp; stores</h3>
-              <p>
-                Online storefronts for listing, selling, and delivering digital
-                products and services.
-              </p>
-            </article>
-            <article className="card">
-              <div className="card-icon" aria-hidden="true">
-                03
-              </div>
-              <h3>Software tools</h3>
-              <p>
-                Applications and utilities that help people and businesses work
-                online more effectively.
-              </p>
-            </article>
-          </div>
+
+          <ul className="policy-list">
+            <li>
+              <Link href="/privacy">
+                Privacy Policy
+                <span>How we handle contact and site data</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/terms">
+                Terms of Service
+                <span>Rules for the site and purchases</span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/support">
+                Support &amp; Refunds
+                <span>Help and when refunds may apply</span>
+              </Link>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="section-header">
-            <h2>Trust &amp; policies</h2>
-            <p>
-              Clear legal and support pages for customers and payment partners —
-              Privacy, Terms, and Support &amp; Refunds.
-            </p>
-          </div>
-          <div className="grid-3">
-            <article className="card">
-              <h3>Privacy Policy</h3>
-              <p>
-                How we handle contact emails and website data. No invented legal
-                addresses.
-              </p>
-              <p style={{ marginTop: "0.85rem" }}>
-                <Link href="/privacy" style={{ color: "var(--accent-hover)" }}>
-                  Read Privacy →
-                </Link>
-              </p>
-            </article>
-            <article className="card">
-              <h3>Terms of Service</h3>
-              <p>
-                Rules for using faycallabs.com and purchasing Fayllabs digital
-                products.
-              </p>
-              <p style={{ marginTop: "0.85rem" }}>
-                <Link href="/terms" style={{ color: "var(--accent-hover)" }}>
-                  Read Terms →
-                </Link>
-              </p>
-            </article>
-            <article className="card">
-              <h3>Support &amp; Refunds</h3>
-              <p>
-                How to get help and when refunds may apply for digital
-                purchases.
-              </p>
-              <p style={{ marginTop: "0.85rem" }}>
-                <Link href="/support" style={{ color: "var(--accent-hover)" }}>
-                  Read Support →
-                </Link>
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container">
-          <div className="cta-band">
+          <div className="contact-panel">
             <div>
-              <h2 style={{ marginBottom: "0.4rem" }}>Ready to talk?</h2>
+              <h2>Contact for business or support</h2>
               <p>
-                Reach Fayllabs at{" "}
-                <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>{" "}
-                for business inquiries, payment onboarding, or support.
+                Inquiries, payment onboarding questions, and customer support
+                go to{" "}
+                <a className="email-link" href={`mailto:${siteConfig.email}`}>
+                  {siteConfig.email}
+                </a>
+                .
               </p>
             </div>
             <Link href="/contact" className="btn btn-primary">
-              Get in touch
+              Open contact page
             </Link>
           </div>
         </div>

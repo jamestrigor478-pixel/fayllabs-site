@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import LogoMark from "./LogoMark";
 
 const links = [
   { href: "/", label: "Home" },
@@ -20,9 +21,7 @@ export default function Header() {
       <div className="container">
         <nav className="nav" aria-label="Primary">
           <Link href="/" className="logo" onClick={() => setOpen(false)}>
-            <span className="logo-mark" aria-hidden="true">
-              F
-            </span>
+            <LogoMark />
             Fayllabs
           </Link>
 
@@ -40,7 +39,7 @@ export default function Header() {
           </ul>
 
           <Link href="/contact" className="btn btn-primary nav-cta">
-            Get in touch
+            Contact
           </Link>
 
           <button
@@ -71,7 +70,7 @@ export default function Header() {
             </Link>
           ))}
           <Link href="/contact" onClick={() => setOpen(false)}>
-            Get in touch
+            Contact
           </Link>
         </div>
       </div>

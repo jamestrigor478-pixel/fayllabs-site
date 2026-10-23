@@ -19,7 +19,7 @@ export default function SupportPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="eyebrow">Trust &amp; support</span>
+          <span className="kicker">Trust &amp; support</span>
           <h1>Support &amp; Refund Policy</h1>
           <p className="lead">
             Last updated: October 23, 2026. This page explains how Fayllabs

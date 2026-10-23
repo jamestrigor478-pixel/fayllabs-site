@@ -34,27 +34,25 @@ export default function ServicesPage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <span className="eyebrow">Services</span>
-          <h1>Digital products &amp; online services</h1>
+          <span className="kicker">Services</span>
+          <h1>What Fayllabs sells and operates</h1>
           <p className="lead">
-            Fayllabs is a digital merchant. Below is a concrete, high-level
-            description of what we sell and operate — without invented case
+            Concrete description of our merchant work — without invented case
             studies or fake client logos.
           </p>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container grid-3">
-          {services.map((service, index) => (
-            <article className="card" key={service.title}>
-              <div className="card-icon" aria-hidden="true">
-                {String(index + 1).padStart(2, "0")}
-              </div>
-              <h3>{service.title}</h3>
-              <p>{service.body}</p>
-            </article>
-          ))}
+      <section className="section" style={{ paddingTop: "1.25rem" }}>
+        <div className="container">
+          <div className="service-stack">
+            {services.map((service) => (
+              <article className="service-block" key={service.title}>
+                <h2>{service.title}</h2>
+                <p>{service.body}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -75,13 +73,15 @@ export default function ServicesPage() {
           </p>
         </div>
 
-        <div className="container" style={{ marginTop: "1.75rem" }}>
-          <div className="cta-band">
+        <div className="container" style={{ marginTop: "2rem" }}>
+          <div className="contact-panel">
             <div>
-              <h2 style={{ marginBottom: "0.4rem" }}>Business inquiries</h2>
+              <h2>Business inquiries</h2>
               <p>
                 Email{" "}
-                <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>{" "}
+                <a className="email-link" href={`mailto:${siteConfig.email}`}>
+                  {siteConfig.email}
+                </a>{" "}
                 for merchant, partnership, or product questions.
               </p>
             </div>
